@@ -7,6 +7,3 @@
         voluptas voluptatum.
     </p>
 </section>
-<?php
-
-getUserData();
