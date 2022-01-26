@@ -12,13 +12,13 @@ html {
 body {
 	text-align: center;
 	font-family: Calibri, serif;
-	background: lightblue;
+	background: #eeeeee;
 }
 
 header, footer {
 	margin: 0;
 	padding: 0;
-	background: cyan;
+	background: #a7c4ce;
 }
 
 footer {
@@ -26,6 +26,10 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+
+.white {
+	color: #eeeeee;
 }
 
 ul {
@@ -41,6 +45,7 @@ li {
 
 a {
 	text-decoration: none;
+	color: #656c6a;
 }
 
 section, form {

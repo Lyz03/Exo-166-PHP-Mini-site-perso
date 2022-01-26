@@ -8,6 +8,6 @@
     </head>
     <body>
         <header>
-            <h1>Mini site perso</h1>
+            <h1 class="white">Mini site perso</h1>
             <?php getPart('menu'); ?>
         </header>
