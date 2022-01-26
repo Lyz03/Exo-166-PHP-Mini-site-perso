@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>Jane Doe</title>
-        <link rel="stylesheet" href="../public/style.css">
+        <title>exo 166</title>
+        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
         <header>
-            <h1>Jane Doe</h1>
+            <h1>Mini site perso</h1>
             <?php getPart('menu'); ?>
         </header>
