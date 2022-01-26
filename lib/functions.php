@@ -18,6 +18,10 @@ function getContent() {
 
         include __DIR__.'/../pages/contact.php';
     }
+    elseif(isset($_GET['page']) && $_GET['page'] == "home") {
+
+        include __DIR__.'/../pages/home.php';
+    }
 }
 
 function getPart($name) {
