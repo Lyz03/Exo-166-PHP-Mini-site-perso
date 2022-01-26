@@ -16,5 +16,5 @@ getPart('footer');
 getContent();
 
 
-// getUserData();
+getUserData();
 

@@ -28,3 +28,37 @@ function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
+function getUserData() {
+    $content = file_get_contents('../data/user.json');
+    $content = json_decode($content);
+
+    foreach ($content as $key => $value) {
+        echo $key . " : ";
+
+        if (is_array($value)) {
+
+            foreach ($value as $item) {
+                $item = json_encode($item);
+
+                //echo $item . '<br>';
+
+                // get rid of { and }
+                $item = trim($item, '{}');
+
+                $item = explode(',', $item);
+
+                foreach ($item as $experience) {
+                    // get rid of "
+                    $experience = trim($experience, '"');
+                    $experience = str_replace('"', ' ', $experience);
+
+                    echo $experience . '<br>';
+                }
+            }
+        } else {
+            echo $value . '<br>';
+        }
+
+    }
+}
+
