@@ -1,7 +1,7 @@
 <section>
     <h1>Contact</h1>
 
-    <form action="/save.php" method="post">
+    <form action="/public/save.php" method="post">
         <div>
             <label for="username">Nom d'utilisateur : </label>
             <input id="username" type="text" name="username">
