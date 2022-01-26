@@ -6,6 +6,9 @@ je vous ai créé la première qui est pour le moment incomplète et qui devra c
 la logique pour choisir la page à charger
 */
 
+/**
+ * include the right page following the page name in the url
+ */
 function getContent() {
 	if(!isset($_GET['page'])){
 		include __DIR__.'/../pages/home.php';
@@ -24,10 +27,17 @@ function getContent() {
     }
 }
 
+/**
+ * include the page based on the given name
+ * @param $name
+ */
 function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
+/**
+ * print the user data from user.json
+ */
 function getUserData() {
     $content = file_get_contents('../data/user.json');
     $content = json_decode($content);

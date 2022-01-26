@@ -8,39 +8,59 @@
 html {
 	font-size:62.5%;
 }
+
 body {
 	text-align: center;
 	font-family: Calibri, serif;
 	background: lightblue;
 }
+
 header, footer {
 	margin: 0;
 	padding: 0;
 	background: cyan;
 }
+
 footer {
+	margin-top: 2rem;
 	position: absolute;
-	top: 750px;
+	bottom: 0;
 	width: 100%;
 }
+
 ul {
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
 	align-items: center;
 }
+
 li {
 	margin-right: 18px;
 }
+
 a {
 	text-decoration: none;
 }
+
 section, form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
+
 section h1 {
 	margin: 8px;
+}
+
+/*
+ * responsive
+ */
+
+@media screen and (max-height:640px) {
+	footer {
+		position: relative;
+	}
 }
