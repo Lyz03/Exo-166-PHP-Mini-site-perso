@@ -1,10 +1,6 @@
 <?php
-
-
-// on inclue le fichier qui contient nos fonctions
 require __DIR__ . '/../lib/functions.php';
 
-// l'exemple avec le header, à vous de jouer pour le reste
 getPart('header');
 
 getContent();
@@ -23,7 +19,3 @@ foreach ($content as $key => $value) {
 echo '</div>';
 
 getPart('footer');
-
-
-
-

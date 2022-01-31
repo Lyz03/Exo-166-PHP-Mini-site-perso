@@ -16,7 +16,9 @@
 
 <?php
 if (isset($_GET['m'])) {
-    if ($_GET['m'] === '1') {
+    if ($_GET['m'] === '0') {
         echo "<p>Message bien envoyé</p>";
+    } elseif ($_GET['m'] === '1') {
+        echo "<p>Erreur lors de l'envoi du message</p>";
     }
 }
