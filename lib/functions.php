@@ -10,20 +10,24 @@ la logique pour choisir la page à charger
  * include the right page following the page name in the url
  */
 function getContent() {
-	if(!isset($_GET['page'])){
+	if (!isset($_GET['page'])){
 		include __DIR__.'/../pages/home.php';
 	}
-	elseif(isset($_GET['page']) && $_GET['page'] == "bio") {
+	elseif (isset($_GET['page']) && $_GET['page'] == "bio") {
 
         include __DIR__.'/../pages/bio.php';
     }
-	elseif(isset($_GET['page']) && $_GET['page'] == "contact") {
+	elseif (isset($_GET['page']) && $_GET['page'] == "contact") {
 
         include __DIR__.'/../pages/contact.php';
     }
-    elseif(isset($_GET['page']) && $_GET['page'] == "home") {
+    elseif (isset($_GET['page']) && $_GET['page'] == "home") {
 
         include __DIR__.'/../pages/home.php';
+    }
+    elseif (isset($_GET['page']) && $_GET['page'] == "connection") {
+
+        include __DIR__.'/../pages/connection.php';
     }
 }
 
@@ -49,8 +53,6 @@ function getUserData() {
 
             foreach ($value as $item) {
                 $item = json_encode($item);
-
-                //echo $item . '<br>';
 
                 // get rid of { and }
                 $item = trim($item, '{}');

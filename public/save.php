@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     json_encode($jsonMessage);
 
 
-    header('Location: admin.php');
+    header('Location: index.php?page=contact&m=1');
 } else {
     header('Location: index.php');
 }
