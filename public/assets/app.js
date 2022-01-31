@@ -1,3 +1,4 @@
+// admin page : showLastMessage button
 const lastMessageButton = document.querySelector('#showLastMessage');
 const lastMessageDiv = document.querySelector('#lastMessage');
 let a = 0;
