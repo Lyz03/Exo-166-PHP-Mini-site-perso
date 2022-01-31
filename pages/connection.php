@@ -1,3 +1,5 @@
+<h1>Connection</h1>
+
 <form action="/connection-form.php" method="post">
     <div>
         <label for="username">Nom d'utilisateur :</label>

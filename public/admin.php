@@ -12,7 +12,6 @@ $content = file_get_contents(__DIR__ . '/../data/last_message.json');
 $content = json_decode($content, true);
 
 echo '<div id="lastMessage">';
-echo '<p>Last message</p>';
 foreach ($content as $key => $value) {
     echo '<span>' . $key . ' : ' . $value . '</span><br>';
 }

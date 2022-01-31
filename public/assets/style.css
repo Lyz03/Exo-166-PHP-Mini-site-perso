@@ -22,7 +22,7 @@ header, footer {
 }
 
 footer {
-	margin-top: 2rem;
+	margin-top: 3rem;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -53,11 +53,26 @@ section, form {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 }
 
 section h1 {
 	margin: 8px;
+}
+
+form {
+	margin-top: 2rem;
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type=submit] {
+	margin-top: 2rem;
+	padding: 0.5rem 0.7rem;
+	background-color: #a7c4ce;
+	color: #eeeeee;
+	border: none;
 }
 
 /*
@@ -68,12 +83,25 @@ section h1 {
 	display: none;
 }
 
+#showLastMessage {
+	font-size: 1.8rem;
+	margin-top: 2rem;
+	border: none;
+	background-color: #959595;
+	color: #eeeeee;
+	padding: 0.5rem 0.7rem;
+	border-radius: 10px;
+}
+
+#showLastMessage:hover {
+	cursor: pointer;
+}
+
 /*
  * responsive
  */
-
-@media screen and (max-height:640px) {
-	footer {
-		position: relative;
+@media screen and (max-width: 480px){
+	ul {
+		flex-wrap: wrap;
 	}
 }
