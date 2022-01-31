@@ -61,6 +61,14 @@ section h1 {
 }
 
 /*
+ * admin
+ */
+
+#lastMessage {
+	display: none;
+}
+
+/*
  * responsive
  */
 
