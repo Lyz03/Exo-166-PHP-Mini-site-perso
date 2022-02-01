@@ -10,24 +10,31 @@ la logique pour choisir la page à charger
  * include the right page following the page name in the url
  */
 function getContent() {
-	if (!isset($_GET['page'])){
-		include __DIR__.'/../pages/home.php';
-	}
-	elseif (isset($_GET['page']) && $_GET['page'] == "bio") {
-
-        include __DIR__.'/../pages/bio.php';
-    }
-	elseif (isset($_GET['page']) && $_GET['page'] == "contact") {
-
-        include __DIR__.'/../pages/contact.php';
-    }
-    elseif (isset($_GET['page']) && $_GET['page'] == "home") {
-
-        include __DIR__.'/../pages/home.php';
-    }
-    elseif (isset($_GET['page']) && $_GET['page'] == "connection") {
-
-        include __DIR__.'/../pages/connection.php';
+	if (isset($_GET['page'])){
+        switch ($_GET['page']) {
+            case 'bio' :
+                require __DIR__.'/../pages/bio.php';
+                break;
+            case 'contact':
+                require __DIR__.'/../pages/contact.php';
+                break;
+            case 'home' :
+                require __DIR__.'/../pages/home.php';
+                break;
+            case 'connection' :
+                require __DIR__.'/../pages/connection.php';
+                break;
+            case 'connectionForm' :
+                require __DIR__. '/connection-form.php';
+                break;
+            case 'save' :
+                require __DIR__. '/save.php';
+                break;
+            default :
+                require __DIR__.'/../pages/home.php';
+        }
+	} else {
+        require __DIR__.'/../pages/home.php';
     }
 }
 
